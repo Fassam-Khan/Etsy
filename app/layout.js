@@ -1,6 +1,6 @@
 import "./globals.css";
-import Navbar from "./compnents/Navbar";
-import Footer from "./compnents/Footer";
+import Navbar from "@/components/mycomponent/Navbar";
+import Footer from "@/components/mycomponent/Footer";
 import { Poppins } from 'next/font/google'; // 1. Import Poppins
 
 

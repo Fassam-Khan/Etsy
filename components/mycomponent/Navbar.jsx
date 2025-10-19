@@ -83,6 +83,7 @@ const Navbar = () => {
 
         {/* Right Section (Icons + Sign In) */}
         <div className="flex items-center gap-2">
+          <Link href="/my-account"><button className="hidden md:block cursor-pointer">Login/Register</button></Link>
          
           <a href="#" className="hidden md:block">
             <button
@@ -92,6 +93,7 @@ const Navbar = () => {
               <img src="/heart.svg" alt="favourites " />
             </button>
           </a>
+         
           <a href="#" className="hidden md:block cursor-pointer">
             <button
               title="Gifts"
