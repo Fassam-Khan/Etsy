@@ -5,7 +5,7 @@ import Link from 'next/link'
 import {DropdownMenu,
   DropdownMenuTrigger,
   DropdownMenuContent,
-  DropdownMenuItem,} from "@/Components/ui/dropdown-menu"
+  DropdownMenuItem,} from "@/components/ui/dropdown-menu"
 
 
 
