@@ -9,8 +9,8 @@ const page = () => {
         setisLogin(!isLogin)
     }
   return (
-    <div className='flex justify-between flex-wrap max-w-[1280px] m-auto mt-10 h-[300px]'>
-        <div className='w-[50%]'>
+    <div className='flex justify-between flex-wrap max-w-[1280px] m-auto mt-10 gap-6 p-4'>
+        <div className='md:w-[50%] w-[100%] flex flex-col '>
         {isLogin ? (
         <Login  />
       ) : (

@@ -23,27 +23,27 @@ export default function LoginPage() {
 
   return (
     <div className="" >
-      <h2 className="text-2xl">LOGIN</h2>
-      <form onSubmit={handleLogin} className="flex flex-col gap-4 mt-6 flex-wrap ">
-        <label className="text-sm text-black" >Usename or email address * </label>
-        <input 
+      <h2 className="text-xl font-semibold">Login</h2>
+      <form onSubmit={handleLogin} className="flex flex-col gap-2 mt-6 flex-wrap md:w-[90%] w-[100%] ">
+        <label className="font-semibold" >Usename or email address * </label>
+        <input  className="bg-white border border-black p-1"
           type="email"
-          placeholder="Email"
+          
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-                <label className="text-sm text-black" >Password * </label>
+                <label className="font-semibold " >Password * </label>
 
 
-        <input
+        <input className="bg-white border border-black p-1"
           type="password"
-          placeholder="Password"
+         
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
-        /><br /><br />
-        <button type="submit">Login</button>
+        />
+        <button type="submit" className="mt-2 bg-orange-500 text-white p-1 cursor-pointer rounded">Login</button>
       </form>
       {error && <p style={{ color: "red" }}>{error}</p>}
     </div>

@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={poppins.variable}>
       <body>
         <Navbar className="sticky"/>
-        <main className="max-w-[1280px] m-auto">
+        <main className="max-w-[1280px] m-auto ">
           {children}
         </main>
         <Footer/>

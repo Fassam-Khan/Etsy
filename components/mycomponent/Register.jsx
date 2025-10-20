@@ -27,7 +27,7 @@ export default function SignupPage() {
   return (
     <div className="">
       <h2 className="text-xl font-semibold">Create an Account</h2>
-      <form onSubmit={handleSignup} className="mt-6 flex flex-col gap-2 w-[90%]">
+      <form onSubmit={handleSignup} className="mt-6 flex flex-col gap-2 md:w-[90%] w-[100%]">
         <label className=" font-semibold">Email address *</label>
     
         <input className="bg-white border border-black p-1"
@@ -46,7 +46,7 @@ export default function SignupPage() {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit" disabled={loading} className="bg-orange-500 text-white">
+        <button type="submit" disabled={loading} className="bg-orange-500 text-white p-1 mt-2 cursor-pointer rounded">
           {loading ? "Creating..." : "Sign Up"}
         </button>
       </form>
