@@ -13,7 +13,7 @@ const poppins = Poppins({
 
 
 export const metadata = {
-  title: "WeImagine – Handmade Jewelry | Unique, Elegant & Timeless Designs",
+  title: "WeImagine Handmade Jewelry | Unique, Elegant & Timeless Designs",
   description: "Shop handmade jewelry by WeImagine. Discover elegant earrings, necklaces & bracelets crafted with passion and care.",
 };
 
