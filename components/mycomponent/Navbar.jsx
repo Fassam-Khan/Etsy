@@ -102,14 +102,15 @@ const Navbar = () => {
               <img src="/gift.svg" alt="gifts" />
             </button>
           </a>
-          <a href="#">
+          <Link href="/cart">
             <button
               title="Basket"
               className="p-2 hover:bg-orange-200 rounded-full transition cursor-pointer"
             >
               <img src="/cart.svg" alt="basket" />
             </button>
-          </a>
+            </Link>
+          
         </div>
       </div>
 

@@ -21,6 +21,7 @@ const ProductCard = ({product}) => {
         <div className='p-2'>
             <p>{product.title}</p>
             <p className='text-xl text-orange-400'>{product.price}</p>
+            <button className='bg-black text-white p-1 w-[100%] rounded-2xl'>Add to cart</button>
         </div>
         <span className= 'hidden group-hover:inline transition-all group-focus:inline bg-white rounded-full p-2 absolute top-2 right-2'><img src="heart.svg" alt="" width={16} /></span>
 
