@@ -128,7 +128,7 @@ const Navbar = () => {
               key={item}
               className="p-2 hover:bg-gray-200 rounded-full cursor-pointer transition"
             >
-              <Link href="/">{item}</Link>
+              <Link href="/products">{item}</Link>
             </li>
           ))}
         </ul>
