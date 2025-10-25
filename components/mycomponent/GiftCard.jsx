@@ -10,7 +10,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-const Feature = () => {
+const GiftCard = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const Feature = () => {
 
   return (
     <div className="mt-12 p-2 relative">
-      <h2 className="text-2xl font-semibold mb-6">Today's Big Deals</h2>
+      <h2 className="text-2xl font-semibold mb-6">Gifts Deals</h2>
 
       <Carousel className="w-full">
         <CarouselContent className="gap-4">
@@ -43,4 +43,4 @@ const Feature = () => {
   );
 };
 
-export default Feature;
+export default GiftCard;

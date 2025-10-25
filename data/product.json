@@ -19,6 +19,27 @@
       "price": 40.99,
       "category": "Jewelry",
       "image": "https://i.etsystatic.com/gold_necklace_1.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Gold Bars",
+      "price": 40.99,
+      "category": "Jewelry",
+      "image": "https://i.etsystatic.com/gold_necklace_1.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Gold Bars",
+      "price": 40.99,
+      "category": "Jewelry",
+      "image": "https://i.etsystatic.com/gold_necklace_1.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Gold Bars",
+      "price": 40.99,
+      "category": "Jewelry",
+      "image": "https://i.etsystatic.com/gold_necklace_1.jpg"
     }
   ]
   

@@ -102,14 +102,19 @@ const Navbar = () => {
               <img src="/gift.svg" alt="gifts" />
             </button>
           </a>
-          <Link href="/cart">
+          <div className='relative'>
+          <Link href="/cart" >
             <button
               title="Basket"
-              className="p-2 hover:bg-orange-200 rounded-full transition cursor-pointer"
+              className="p-2 hover:bg-orange-200 rounded-full transition cursor-pointer  "
             >
               <img src="/cart.svg" alt="basket" />
             </button>
             </Link>
+            
+            <span className='absolute right-0 top-0 w-2 h-2  p-2 text-[10px] flex justify-center items-center bg-orange-400 rounded-full text-white'>0</span>
+            </div>
+
           
         </div>
       </div>

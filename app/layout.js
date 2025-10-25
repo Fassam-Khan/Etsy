@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar className="sticky"/>
         <main className="max-w-[1280px] m-auto ">
-          {children}
+       {children}
         </main>
         <Footer/>
       </body>

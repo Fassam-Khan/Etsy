@@ -1,34 +1,26 @@
-"use client";
-import { useEffect, useState } from "react";
 import Link from "next/link";
+import products from "@/data/product.json" // ✅ import JSON data
 
 export default function ProductsPage() {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
-      .then((res) => res.json())
-      .then((data) => setProducts(data))
-      .catch((err) => console.error("Error fetching products:", err));
-  }, []);
-
   return (
-    <div className="p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-      {products.map((item) => (
-        <div key={item.id} className="border p-4 rounded-xl shadow hover:shadow-lg">
+    <div className="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      {products.map((product) => (
+        <div
+          key={product.id}
+          className="border rounded-xl shadow p-4 text-center hover:shadow-lg transition"
+        >
           <img
-            src={item.image}
-            alt={item.title}
-            className="h-40 w-full object-contain"
+            src={product.image}
+            alt={product.name}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+            className="w-full h-48 object-cover rounded-lg"
           />
-          <h2 className="font-semibold mt-3 text-sm">{item.title}</h2>
-          <p className="text-gray-600">${item.price}</p>
-
-          {/* 👇 Link to single product page */}
-          <Link href={`/products/${item.id}`}>
-            <button className="bg-black text-white w-full mt-2 rounded py-1">
-              View Details
-            </button>
+          <h2 className="text-lg font-semibold mt-3">{product.name}</h2>
+          <p className="text-gray-700 mt-1">Rs. {product.price}</p>
+          <Link
+            href={`/products/${product.id}`}
+            className="inline-block mt-3 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700"
+          >
+            View Details
           </Link>
         </div>
       ))}
