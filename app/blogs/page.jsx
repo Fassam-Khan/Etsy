@@ -1,5 +1,5 @@
 import React from 'react'
-import BlogFilter from '@/components/mycomponent/blogFilter'
+import BlogFilter from '@/components/mycomponent/BlogFilter'
 
 const page = () => {
   return (
