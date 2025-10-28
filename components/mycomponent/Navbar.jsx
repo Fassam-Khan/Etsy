@@ -82,7 +82,9 @@ const Navbar = () => {
         </div>
 
         {/* Right Section (Icons + Sign In) */}
+        
         <div className="flex items-center gap-2">
+          <Link href='/blogs'>Blog</Link>
           <Link href="/my-account"><button className=" md:block cursor-pointer flex"><img src="/user.svg" alt="" className='md:hidden' /><span className='hidden md:inline'>Login/Register</span></button></Link>
          
           <a href="#" className="hidden md:block">
@@ -156,6 +158,7 @@ const Navbar = () => {
               <li className='mb-8'><Link href='/'>Art Wall</Link></li>
               <li className='mb-8'><Link href='/'>Art Wall</Link></li>
               <li className='mb-8'><Link href='/'>Art Wall</Link></li>
+              <li className='mb-8' ><Link href='/blogs'>Blogs</Link></li>
             </ul>
           </div>
 

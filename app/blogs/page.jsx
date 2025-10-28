@@ -1,10 +1,11 @@
+import BlogItem from '@/components/mycomponent/BlogItem'
+import BlogList from '@/components/mycomponent/BlogList'
 import React from 'react'
-import BlogFilter from '@/components/mycomponent/blogFilter'
 
 const page = () => {
   return (
     <div>
-        <BlogFilter/>
+      <BlogList/>
       
     </div>
   )
