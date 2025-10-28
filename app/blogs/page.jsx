@@ -1,14 +1,13 @@
 import React from 'react'
-import products from "@/data/product.json"
+import BlogFilter from '@/components/mycomponent/blogFilter'
 
 const page = () => {
   return (
     <div>
-      Hi this is product{products[0].id}
+        <BlogFilter/>
       
     </div>
   )
 }
 
 export default page
-

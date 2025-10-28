@@ -15,7 +15,14 @@ export default function LoginPage() {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      router.push("/");
+      if(email == "muhammadfassam465@gmail.com"){
+        router.push("/seller");
+
+      }
+      else{
+        router.push("/")
+      }
+      
     } catch (err) {
       setError(err.message);
     }

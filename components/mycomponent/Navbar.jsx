@@ -123,7 +123,7 @@ const Navbar = () => {
       <div className="hidden md:flex justify-center mt-2">
         <ul className="flex gap-4 text-sm md:text-base">
           {[
-            'Wall Art',
+            'Laptops',
             'Digital Art & Illustrations',
             'Stationery & Paper Goods',
             'Craft & DIY Designs',
