@@ -5,7 +5,7 @@ import { blogCategories } from '@/data/blogdata';
 import { blog } from '@/data/blogdata';
 import { BlocksIcon } from 'lucide-react';
 import BlogCard from './BlogCard';
-import {BlogList }from './BlogList';
+import BlogList from './BlogList';
 
 const BlogFilter = () => {
     const [menue, setmenue] = useState("All")
