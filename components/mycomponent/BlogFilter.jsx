@@ -5,6 +5,7 @@ import { blogCategories } from '@/data/blogdata';
 import { blog } from '@/data/blogdata';
 import { BlocksIcon } from 'lucide-react';
 import BlogCard from './BlogCard';
+import BlogList from './BlogList';
 
 const BlogFilter = () => {
     const [menue, setmenue] = useState("All")
@@ -22,8 +23,8 @@ const BlogFilter = () => {
 
             </div>
             <div>
-                {blog.filter((blog)=>menue === "All" ? true : blog.category === menue).map((blog)=>{
-                    return <BlogCard key={blog.blog_id} blog={blog}/>
+                {blog.filter((blog)=>menue === "All" ? true : blog.category === menue).map((item,index)=>{
+                    return <BlogList key={index} title={item.blog_title} blogid={item.blog_id} status={item.status} />
                 })}
             </div>
         </>
