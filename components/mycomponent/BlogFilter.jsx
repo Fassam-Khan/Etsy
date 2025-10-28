@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // "use client"
 // import React from 'react'
 // import { useState } from 'react';
@@ -6,6 +7,16 @@
 // import { BlocksIcon } from 'lucide-react';
 // import BlogCard from './BlogCard';
 // import BlogList from './BlogList';
+=======
+"use client"
+import React from 'react'
+import { useState } from 'react';
+import { blogCategories } from '@/data/blogdata';
+import { blog } from '@/data/blogdata';
+
+import BlogCard from './BlogCard';
+import BlogList from './BlogList';
+>>>>>>> 2f0709a12ad4c798af4ef41be11d64d3b8b78ab5
 
 // const BlogFilter = () => {
 //     const [menue, setmenue] = useState("All")
