@@ -3,7 +3,7 @@ import React from 'react'
 import { useState } from 'react';
 import { blogCategories } from '@/data/blogdata';
 import { blog } from '@/data/blogdata';
-import { BlocksIcon } from 'lucide-react';
+
 import BlogCard from './BlogCard';
 import BlogList from './BlogList';
 
