@@ -10,7 +10,7 @@ const BlogItem = ({image, title,description }) => {
         <div className='p-2 flex flex-col gap-2'>
         <h2 className='font-semibold text-xl'>{blog[0].blog_title}</h2>
         <p>{description.slice(0,60)}...</p>
-        <Link href='/blogs' ><div className='cursor-pointer underline font-semibold'>Read More</div></Link>
+        <Link href='/blogs' ><div className='cursor-pointer underline font-semibold'>Read More..</div></Link>
         </div>
       
     </div>
