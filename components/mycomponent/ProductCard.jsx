@@ -1,38 +1,32 @@
-"use client";
-import React from "react";
-import Link from "next/link";
+import React from 'react'
+import { productData } from '@/data/product'
+import Image from 'next/image'
+import Link from 'next/link'
 
-const ProductCard = ({ product }) => {
-  if (!product) return null; // safety check in case product is undefined
-
+const ProductCard = ({ title, image, price, id , link}) => {
   return (
-    <Link
-      href={`/products/${product.id}`}
-      className="outline outline-gray-300 md:w-[260px] rounded-2xl hover:shadow-xl cursor-pointer relative group focus:shadow-2xl block"
-    >
-      <div className="bg-cover md:h-[270px] h-[200px] rounded-t-2xl p-2">
-        <img
-          src={product.image || product.images?.[0]}
-          alt={product.title || "Product image"}
-          className="w-full h-64 object-cover rounded-t-2xl"
-        />
-      </div>
-      <div className="p-2">
-        <p>{product.title}</p>
-        <p className="text-xl text-orange-400">Rs {product.price}</p>
-        <button
-          type="button"
-          onClick={(e) => e.preventDefault()} // prevent Link navigation
-          className="bg-black text-white p-1 w-full rounded-2xl"
-        >
+    <>
+    <div className='group hover:border transition-all cursor-pointer'>
+      <Link href={`/products/${id}`}>
+      <img src={image} alt="" className='object-fill w-full' />
+      </Link>
+      <div className='p-4 '>
+        <h2 className=' text-xl'>{title.slice(0,30)}....</h2>
+        <p className='font-bold '>Price: Rs.{price}</p>
+        
+        
+        <Link href={link} target="_blank">
+        <button className='hidden group-hover:block bg-orange-400 text-white p-1.5 w-full cursor-pointer'>
           Add to cart
         </button>
+        </Link>
+        
       </div>
-      <span className="hidden group-hover:inline transition-all group-focus:inline bg-white rounded-full p-2 absolute top-2 right-2">
-        <img src="heart.svg" alt="Wishlist" width={16} />
-      </span>
-    </Link>
-  );
-};
+      
+    </div>
+    </>
+   
+  )
+}
 
-export default ProductCard;
+export default ProductCard

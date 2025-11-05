@@ -1,14 +1,15 @@
+"use client"
+import { useParams } from 'next/navigation'
 import React from 'react'
-import products from "@/data/product.json"
 
 const page = () => {
+   const  params = useParams()
   return (
     <div>
-      Hi this is product{products[0].id}
-      
+        <h1>This is single product page</h1>
+        <p>{params.id}</p>
     </div>
   )
 }
 
 export default page
-

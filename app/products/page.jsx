@@ -1,6 +1,5 @@
 import Link from "next/link";
-import products from "@/data/product.json" // ✅ import JSON data
-
+import { productData } from "@/data/product";
 export default function ProductsPage() {
   return (
     <div className="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
