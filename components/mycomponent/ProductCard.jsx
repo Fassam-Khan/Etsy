@@ -6,7 +6,7 @@ import Link from 'next/link'
 const ProductCard = ({ title, image, price, id , link}) => {
   return (
     <>
-    <div className='group hover:border transition-all cursor-pointer'>
+    <div className='group hover:border focus-within:border  transition-all cursor-pointer'>
       <Link href={`/products/${id}`}>
       <img src={image} alt="" className='object-fill w-full' />
       </Link>
@@ -16,7 +16,7 @@ const ProductCard = ({ title, image, price, id , link}) => {
         
         
         <Link href={link} target="_blank">
-        <button className='hidden group-hover:block bg-orange-400 text-white p-1.5 w-full cursor-pointer'>
+        <button className='hidden group-hover:block group-focus-within:block bg-orange-400  text-white p-1.5 w-full cursor-pointer'>
           Add to cart
         </button>
         </Link>

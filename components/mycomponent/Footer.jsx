@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Footer = () => {
     return (
-        <footer className='mt-10'>
+        <footer className='mt-10  w-full'>
             {/* Prefooter */}
             <div className='flex flex-col items-center bg-[#ccebff] p-7 gap-10  justify-center'>
                 <div>

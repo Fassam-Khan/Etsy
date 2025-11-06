@@ -5,7 +5,8 @@ export const productData = [
     "price": 24.99,
     "category": "Home & Living",
     "image": "https://techlinks.pk/wp-content/uploads/2025/09/1-5-scaled-1.jpg",
-    "link": "https://techlinks.pk/product/lenovo-g50-70-laptop-smooth-performance-big-screen"
+    "link": "https://techlinks.pk/product/lenovo-g50-70-laptop-smooth-performance-big-screen",
+    "description": "sdjsdjsdsjdsdjskdjskdjskdsjdskdsdjskdjsdsdksjdksdjsdsjdsdsjkdjsdsjdsdjsidwhduwegdyuwgdwdwudwdhwudhwjdhwjdhwdhwu"
   },
   {
     "id": 2,
@@ -23,7 +24,9 @@ export const productData = [
     "price": 20000,
     "category": "Jewelry",
     "image": "https://techlinks.pk/wp-content/uploads/2025/09/1-5-scaled-1.jpg",
-    "link": "https://techlinks.pk/product/lenovo-g50-70-laptop-smooth-performance-big-screen"
+    "link": "https://techlinks.pk/product/lenovo-g50-70-laptop-smooth-performance-big-screen",
+        "description": "sdjsdjsdsjdsdj skdjskdj skdsjds kdsdjskdjs dsdks jdksdjsds jdsdsj kdjs dsjdsd jsidwh duweg dyu wgdwdwudwdhwudhw jdhwjdhwdhwu"
+
 
   },
   {
