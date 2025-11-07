@@ -1,0 +1,13 @@
+### Get all products
+GET http://localhost:3000/api/products
+### Add new product
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+  "title": "Brush Set",
+  "price": 800,
+  "salePrice": 600,
+  "description": "High quality paint brush set",
+  "image": "/images/brush.jpg"
+}
