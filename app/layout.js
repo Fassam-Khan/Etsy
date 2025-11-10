@@ -1,7 +1,8 @@
 import "./globals.css";
-import Navbar from "@/components/mycomponent/Navbar";
+import Navbar from "@/components/mycomponent/Header";
 import Footer from "@/components/mycomponent/Footer";
 import { Poppins } from 'next/font/google'; // 1. Import Poppins
+import Header from "@/components/mycomponent/Header";
 
 
 // 2. Configure the font instance
@@ -22,10 +23,8 @@ export default function RootLayout({ children }) {
    
     <html lang="en" className={poppins.variable}>
       <body>
-        <Navbar className=" "/>
-        <main className="max-w-[1280px] m-auto ">
+        <Header/>
        {children}
-        </main>
         <Footer/>
       </body>
     </html>
