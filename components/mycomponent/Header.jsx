@@ -13,7 +13,6 @@ import { currentUser } from '@clerk/nextjs/server'
 
 const Header = async () => {
   const user = await currentUser();
-  console.log(user);
   return (
     <header className='py-5 border-b-black/20 border '>
       <Container className='flex justify-between items-center '>
