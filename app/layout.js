@@ -3,11 +3,12 @@ import Navbar from "@/components/mycomponent/Header";
 import Footer from "@/components/mycomponent/Footer";
 import { Poppins } from 'next/font/google'; // 1. Import Poppins
 import Header from "@/components/mycomponent/Header";
+import { ClerkProvider } from "@clerk/nextjs";
 
 
 // 2. Configure the font instance
-const poppins = Poppins({ 
-  subsets: ['latin'], 
+const poppins = Poppins({
+  subsets: ['latin'],
   weight: ['100', '300', '400', '500', '600', '700', '900'], // Select the weights you need
   variable: '--font-poppins', // Assign a CSS variable name
 });
@@ -20,14 +21,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-   
-    <html lang="en" className={poppins.variable}>
-      <body>
-        <Header/>
-       {children}
-        <Footer/>
-      </body>
-    </html>
-    
+
+    <ClerkProvider>
+      <html lang="en" className={poppins.variable}>
+        <body>
+          <Header />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </ClerkProvider>
+
   );
 }

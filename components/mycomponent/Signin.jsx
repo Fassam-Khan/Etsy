@@ -1,8 +1,14 @@
+import { SignInButton } from '@clerk/nextjs'
 import React from 'react'
 
 const Signin = () => {
   return (
-    <div>Signin</div>
+    <SignInButton mode='modal'>
+      <button>
+        Login
+      </button>
+      
+    </SignInButton>
   )
 }
 

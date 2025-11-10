@@ -7,21 +7,29 @@ import CartIcon from './CartIcon'
 import FavouriteBtn from './FavouriteBtn'
 import Signin from './Signin'
 import MobileSidebar from './MobileSidebar'
+import { ClerkLoaded, UserButton } from '@clerk/nextjs'
+import { currentUser } from '@clerk/nextjs/server'
 
-const Header = () => {
+
+const Header = async () => {
+  const user = await currentUser();
+  console.log(user);
   return (
     <header className='py-5 border-b-black/20 border '>
       <Container className='flex justify-between items-center '>
         <div className='flex gap-2 items-center'>
-        <MobileSidebar />
-        <Logo/>
+          <MobileSidebar />
+          <Logo />
         </div>
-        <HeaderMenue/>
+        <HeaderMenue />
         <div className='flex gap-3'>
-          <Search/>
-          <CartIcon/>
-          <FavouriteBtn/>
-          <Signin/>
+          <Search />
+          <CartIcon />
+          <FavouriteBtn />
+          <ClerkLoaded>
+            <UserButton />
+            {!user && <Signin />}
+          </ClerkLoaded>
         </div>
       </Container>
 
