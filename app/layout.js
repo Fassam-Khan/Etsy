@@ -19,15 +19,13 @@ export const metadata = {
   description: "Shop handmade jewelry by WeImagine. Discover elegant earrings, necklaces & bracelets crafted with passion and care.",
 };
 
-export default function RootLayout({ children }) {
+export default function Layout({ children }) {
   return (
 
     <ClerkProvider>
       <html lang="en" className={poppins.variable}>
         <body>
-          <Header />
           {children}
-          <Footer />
         </body>
       </html>
     </ClerkProvider>
